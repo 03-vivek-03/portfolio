@@ -1,3 +1,23 @@
+<script>
+  // Get the element by id
+  const totalExperienceElement = document.getElementById('totalExperience');
+
+  // Set the start date (July 2021)
+  const startDate = new Date('July 1, 2021');
+
+  // Get the current date
+  const currentDate = new Date();
+
+  // Calculate the difference in years and months
+  const diffYears = currentDate.getFullYear() - startDate.getFullYear();
+  const diffMonths = currentDate.getMonth() - startDate.getMonth();
+  const totalMonths = diffYears * 12 + diffMonths;
+
+  // Display the total experience in the span element
+  totalExperienceElement.textContent = `${Math.floor(totalMonths / 12)} Years & ${totalMonths % 12} Months`;
+</script>
+
+
 /**
 * Template Name: Personal
 * Updated: Jun 18 2023 with Bootstrap v5.3.0
