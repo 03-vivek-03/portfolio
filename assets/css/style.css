@@ -46,24 +46,6 @@ a {
   text-decoration: none;
 }
 
-a:hover::before {
-    content: "View Certificate";
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    transition: 0.1s ease-in-out; /* Set transition duration */
-  }
-
-  /* Move the tooltip to the right of the link */
-  a:hover::before {
-    left: 110%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
 h1,
 h2,
 h3,
