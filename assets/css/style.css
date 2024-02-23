@@ -18,6 +18,11 @@ body {
   background: transparent;
 }
 
+.img-fluid {
+    max-width: 200px; /* Adjust this value to your desired width */
+    max-height: 200px; /* Adjust this value to your desired height */
+  }
+
 body::before {
   content: "";
   position: fixed;
@@ -41,11 +46,6 @@ a {
   text-decoration: none;
 }
 
-.img-fluid {
-    max-width: 200px; /* Adjust this value to your desired width */
-    max-height: 200px; /* Adjust this value to your desired height */
-  }
-
 a:hover::before {
     content: "View Certificate";
     position: absolute;
@@ -63,6 +63,7 @@ a:hover::before {
     top: 50%;
     transform: translateY(-50%);
   }
+
 h1,
 h2,
 h3,
