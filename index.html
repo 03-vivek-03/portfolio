@@ -84,43 +84,65 @@
     <!-- ======= About Me ======= -->
     <div class="about-me container">
 
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
+        <div class="section-title">
+            <h2>About</h2>
+            <p>Learn more about me</p>
+        </div>
 
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right" style="text-align: center;">
-          <img src="assets/img/Profile2.jpeg" alt="" width="215" height="280">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>AI-ML &amp; Data Scientist</h3>
-          <p class="fst-italic">
-            Passionate about AI and ML, I specialize in leveraging cutting-edge algorithms and data science techniques to tackle real-world challenges effectively.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>                
-                <li><i class="bi bi-chevron-right"></i> <strong>Work Experience:</strong> <span>2 Years & 9 Months</span></li>
-<!--                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 98902 93565</span></li> -->
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, Maharashtra, India</span></li>
-              </ul>
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-right" style="text-align: center;">
+                <img src="assets/img/Profile2.jpeg" alt="" width="215" height="280">
             </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B. Tech. Engineering</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>choudhari.vivek98@gmail.com</span></li>
-              </ul>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>AI-ML &amp; Data Scientist</h3>
+                <p class="fst-italic">
+                    Passionate about AI and ML, I specialize in leveraging cutting-edge algorithms and data science techniques to tackle real-world challenges effectively.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Work Experience:</strong> <span id="work-experience"></span></li>
+                            <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 98902 93565</span></li> -->
+                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, Maharashtra, India</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B. Tech. Engineering</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>choudhari.vivek98@gmail.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    Currently, my focus lies in developing AI-driven solutions for chest X-rays, utilizing deep learning algorithms to predict pathologies accurately.
+                    Through my expertise in machine learning and medical imaging, I strive to improve healthcare outcomes by enabling early detection and treatment of various chest-related conditions.
+                </p>
             </div>
-          </div>
-          <p>
-            Currently, my focus lies in developing AI-driven solutions for chest X-rays, utilizing deep learning algorithms to predict pathologies accurately. 
-            Through my expertise in machine learning and medical imaging, I strive to improve healthcare outcomes by enabling early detection and treatment of various chest-related conditions.
-          </p>
         </div>
-      </div>
 
     </div><!-- End About Me -->
+
+    <script>
+        // Function to calculate work experience
+        function calculateExperience(startDate) {
+            const start = new Date(startDate);
+            const now = new Date();
+            let years = now.getFullYear() - start.getFullYear();
+            let months = now.getMonth() - start.getMonth();
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            return `${years} Years & ${months} Months`;
+        }
+
+        // Set the work experience
+        document.getElementById('work-experience').innerText = calculateExperience('2021-02-01');
+    </script>
+
+</section>
 <!--
      ======= Counts =======
     <div class="counts container">
@@ -303,7 +325,7 @@
         <h2>Resume</h2>
         <p>Check My Resume</p>
         <div style="margin-top: -18px;">
-          <a href="assets/resume/Vivek Choudhari March 2024.pdf" target="_blank" class="linkedin"><i style="font-size: 40px;" class="bi bi-download"></i></a>
+          <a href="assets/resume/Curriculum Vitae.pdf" target="_blank" class="linkedin"><i style="font-size: 40px;" class="bi bi-download"></i></a>
         </div>
       </div>
 
