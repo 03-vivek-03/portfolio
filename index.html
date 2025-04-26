@@ -78,7 +78,7 @@
 
         <div class="section-title">
             <h2>About</h2>
-            <p>Learn more about me</p>
+            <!-- <p>Learn more about me</p> -->
         </div>
 
         <div class="row">
@@ -86,16 +86,23 @@
                 <img src="assets/img/Profile2.jpeg" alt="" width="215" height="280">
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                <h3>AI-ML Data Scientist</h3>
-                <p class="fst-italic">
-                  I specialize in developing AI-driven solutions, with expertise in areas such as medical imaging, pathology detection, and healthcare-focused AI. 
-                  I have built AI systems like "Chest X-ray AI" for multiple pathologies, "Simplified Report AI" for simplifying medical reports, 
-                  and "AI for Machine Protocol" to assist in CT/MRI procedures.
+                <h3>Lead Data Scientist | AI in Healthcare Specialist</h3>
+                <p class="fst-italic" >
+                  Experienced in building and deploying AI-driven solutions across healthcare domains, with a focus on medical imaging, 
+                  document automation, and clinical workflow optimization. Key projects include:
+                  <li><strong>MRI Spine Vertebrae Segmentation</strong> to automate vertebral identification and labeling in sagittal MRI scans</li>
+                  <li><strong>Tender Summarisation LLM</strong> using Retrieval-Augmented Generation (RAG), vector databases, and streamlit-based UI to condense 400+ page tender documents into 1–2 page actionable summaries</li>
                 </p>
-                <p class="fst-italic">  
-                  Lead Data Scientist with 3+ years of experience in AI and Machine Learning. 
-                  Built and deployed various AI solutions in the healthcare domain, including Chest X-ray AI, 
-                  gender-specific reporting AI, and systems for automating medical protocols and tagging patient studies.
+                <p class="fst-italic">
+                  Previously built and productionized:
+                  <li><strong>Chest X-ray AI</strong> for multi-pathology detection with full deployment on client infrastructure</li>
+                  <li><strong>Simplified Report AI</strong> to translate medical findings into patient-friendly language</li>
+                  <li><strong>Machine Protocol AI</strong> guiding CT/MRI technicians on correct scan procedures</li>
+                  <li><strong>Gender-Specific Reporting AI</strong> to prevent gender-related report errors</li>
+                  <li><strong>Patient Study Tagging AI</strong> for auto-classifying Normal vs. Abnormal studies</li>
+                </p>
+                <p>  
+                  Known for building reliable, scalable, and domain-aligned AI systems that reduce diagnostic burden, ensure consistency, and drive operational efficiency.
                 </p>
                 <div class="row">
                     <div class="col-lg-6">
@@ -282,6 +289,13 @@
             </div>
           </div>
 
+          <div class="progress">
+            <span class="skill">LLM & RAG <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -339,7 +353,7 @@
         <h2>Experience</h2>
         <p></p>
         <div style="margin-top: -18px;">
-          <a href="assets/resume/Vivek Choudhari_CV.pdf" target="_blank" class="linkedin"><i style="font-size: 40px;" class="bi bi-download"></i></a>
+          <a href="assets/resume/VivekChoudhari_CV.pdf" target="_blank" class="linkedin"><i style="font-size: 40px;" class="bi bi-download"></i></a>
         </div>
       </div>
 
@@ -367,10 +381,14 @@
             <p><em>Jul 2021 - Apr 2023 | Pune, Maharashtra</em></p>
             <p>
             <ul>
-              <li>Conducted in-depth analysis of customer attrition for British Gas, UK, identifying key factors.</li>
-              <li>Developed multiple data cleaning scripts to analyze customer churn and provided actionable insights to mitigate attrition rates.</li>
-              <li>Applied data science techniques to analyze text data, extracting insights on service challenges across different cities, areas, and demographics.</li>
-              <li>Collaborated with cross-functional teams to implement data-driven solutions and optimize customer retention strategies.</li>
+              <li>Led development of ML models to predict customer churn for British Gas (UK), delivering actionable insights that improved retention strategy decisions.</li>
+              <li>Built end-to-end pipelines for customer feedback analysis, applying NLP techniques like sentiment analysis, topic modelling (LDA), and keyword extraction to identify service gaps across regions.</li>
+              <li>Designed and deployed a classification model to categorize service complaints, achieving 87% accuracy and enabling faster issue resolution.</li>
+              <li>Conducted A/B testing simulations for customer retention campaigns, analysing experimental outcomes and recommending winning strategies using statistical inference.</li>
+              <li>Optimized feature selection and model interpretability using SHAP and LIME frameworks, enhancing trust and explainability for business stakeholders.</li>
+              <li>Created clustering models (K-Means, DBSCAN) for customer segmentation based on behavioural and demographic data, helping marketing teams design targeted campaigns.</li>
+              <li>Collaborated on a time series forecasting project, predicting service demand trends and aiding in better workforce and logistics planning.</li>
+              <li>Documented and presented findings through interactive dashboards (Power BI, Tableau) and technical reports, ensuring stakeholder alignment and visibility.</li>
             </ul>
             </p>
           </div>
@@ -380,11 +398,10 @@
             <p><em>Feb 2021 - Jun 2021 | Pune, Maharashtra</em></p>
             <p>
             <ul>
-              <li>Received training in languages like C, Python, SQL, and JavaScript.</li>
-              <li>Familiarized with Agile methodology and Automation Testing principles.</li>
-              <li>Successfully executed projects such as "Book Tour from Redbus.com" for Automation Testing.</li>
-              <li>Engaged in Data Science projects including "Mobile Price Prediction" and "Sentiment Analysis."</li>
-              <li>Actively pursued additional learning through Udemy to enhance skills and knowledge.</li>
+              <li>Developed predictive models for mobile price classification and sentiment analysis, applying feature engineering, hyperparameter tuning, and model evaluation techniques.</li>
+              <li>Applied clustering algorithms and custom similarity metrics to group customer datasets, improving segmentation speed and insight discovery.</li>
+              <li>Built exploratory data analysis (EDA) dashboards using Python libraries (Pandas, Matplotlib, Seaborn), providing data-driven storytelling to support project outcomes.</li>
+              <li>Proactively pursued certifications in Python programming, SQL, and machine learning fundamentals, demonstrating continuous learning and technical growth.</li>
             </ul>
             </p>
           </div>
@@ -393,6 +410,22 @@
         <div class="col-lg-6">
           
           <h3 class="resume-title">Projects</h3>
+          <div class="resume-item">
+            <h4>MRI Spine Vertebrae Segmentation</h4>
+            <ul>
+              <li>Leading a project focused on segmenting all vertebrae from sagittal MRI spine scans.</li>
+              <li>Aiming to build an efficient AI pipeline for automatic spinal segmentation to enhance diagnostic accuracy and support early detection of spine-related pathologies.</li>
+              <li>Involved in model development, validation, and planned integration into clinical workflows for seamless adoption.</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Tender Summarisation Using LLM</h4>
+            <ul>
+              <li>Developing a Large Language Model (LLM) solution using Retrieval-Augmented Generation (RAG), vector databases, and advanced embedding techniques.</li>
+              <li>Built an initial Streamlit-based UI for testing and validation purposes.</li>
+              <li>The objective is to summarise large tender documents (400+ pages) into precise, actionable 1-2 page summaries to assist stakeholders in quick decision-making and reduce manual effort.</li>
+            </ul>
+          </div>
           <div class="resume-item">
             <h4>AI-ML Deep Learning Models in Chest X-Ray</h4>
             <ul>
